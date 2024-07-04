@@ -1,0 +1,32 @@
+.image{
+    width:30vw;
+    display: flex;
+    margin:0 auto;
+    justify-content: center;
+}
+.image2{
+    height:60vh;
+    object-fit: cover;
+display: flex;
+justify-content: center;
+   
+    border-radius: 20px;
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.345);
+}
+.title{
+    font-size:4rem;
+    font-family: "RubikWet";
+    text-align: center;
+    margin:2% auto;
+    direction:rtl
+}
+
+.claim{
+    font-size:2.4rem;
+width:30%;
+line-height: 1.2;
+font-family: "RubikWet";
+text-align: center;
+margin: 2% auto;
+direction:rtl
+}

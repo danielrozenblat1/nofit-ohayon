@@ -1,0 +1,231 @@
+
+
+.navbar {
+ 
+    display: flex;
+    width:100%;
+    background: linear-gradient(135deg, rgba(237,233,228,1) 0%, rgba(238,225,208,1) 20%, rgba(237,233,228,1) 40%, rgba(236,215,189,1) 60%, rgba(237,233,228,1) 80%, rgba(233,201,175,1) 100%);
+
+  height:80px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+ box-shadow: 0 0 5px 2px rgba(9, 9, 9, 0.345);
+    box-sizing: border-box;
+ transition: all ease-out 1s;
+  }
+  
+
+.floatingNav {
+ 
+  display: flex;
+  width:100%;
+  background: linear-gradient(135deg, rgba(237,233,228,1) 0%, rgba(238,225,208,1) 20%, rgba(237,233,228,1) 40%, rgba(236,215,189,1) 60%, rgba(237,233,228,1) 80%, rgba(233,201,175,1) 100%);
+position: fixed;
+top: -80px;
+z-index: 999;
+left:0;
+transform: translateY(80px);
+height:80px;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(10px);
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+box-shadow: 0 0 5px 2px rgba(9, 9, 9, 0.345);
+  box-sizing: border-box;
+transition: all ease-out 1s;
+}
+
+  .logoContainer {
+    flex: 1;
+    display: flex;
+
+  }
+
+  
+  .navLinks {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width:100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(237,233,228,1) 0%, rgba(238,225,208,1) 20%, rgba(237,233,228,1) 40%, rgba(236,215,189,1) 60%, rgba(237,233,228,1) 80%, rgba(233,201,175,1) 100%);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  
+    box-sizing: border-box;
+    z-index: 999999;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .openLinks {
+    right: 0;
+  }
+  
+  .navLinks ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .navLinks ul li {
+    margin: 10px 0;
+  }
+  
+
+
+  
+  .hamburger {
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+  .image{
+    height:70px;
+    object-fit: fill;
+  }
+  .overlay {
+  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+  z-index: 999;
+    opacity: 1;
+    visibility: visible;
+  }
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+  }
+  .navLink{
+
+    color:rgb(0, 0, 0);
+    font-size: 1.2rem;
+font-family: "AssistantR";
+cursor: pointer;
+transition: all ease 1s;
+text-decoration: none;
+  }
+  .navLink:hover{
+  
+transform: scale(1.1);
+
+  }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 35%;;
+  }
+.navImage{
+  height:100px;
+  object-fit: fill;
+}
+
+  @media only screen and (max-width: 350px){
+
+    .image{
+      height:50px;
+      object-fit: fill;
+    }
+    .navLinks ul li {
+      margin: 20px 0;
+    }
+    .navImage{
+      height:65px;
+      object-fit: fill;
+    }
+  }
+  @media only screen  and (min-width: 350px) and (max-width: 450px){
+
+    .image{
+      height:55px;
+      object-fit: fill;
+    }
+    .navImage{
+      height:70px;
+      object-fit: fill;
+    }
+    .navLinks ul li {
+      margin: 25px 0;
+    }
+
+  }
+  @media only screen  and (min-width: 450px) and (max-width: 650px){
+
+    .image{
+      height:60px;
+      object-fit: fill;
+    }
+    .navImage{
+      height:75px;
+      object-fit: fill;
+    }
+    .navLinks ul li {
+      margin:30px 0;
+    }
+
+  }
+  @media only screen  and (min-width: 650px) and (max-width: 850px){
+
+    .image{
+      height:65px;
+      object-fit: fill;
+    }
+    .navImage{
+      height:80px;
+      object-fit: fill;
+    }
+    .navLinks ul li {
+      margin:35px 0;
+    }
+  }
+
+  @media only screen  and (min-width: 850px) and (max-width: 1050px){
+
+    .row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 60%;
+    }
+  }
+  @media only screen  and (min-width: 1050px) and (max-width: 1250px){
+
+    .row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 45%;
+    }
+  }

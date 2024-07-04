@@ -1,0 +1,123 @@
+.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #e5c6ae80;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px 1px #333333;
+    justify-content: center;
+  }
+  
+  .text {
+    font-size: 1.2rem;
+    font-family: "Assistant";
+    display: flex;
+    direction: rtl;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttonWrap {
+    width: 400px;
+    height: 80px;
+    border-radius: 50px;
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 4px 1px #333;;
+    background: linear-gradient(to left, #ece4dc, #e6dccf, #D6D1CB);
+
+    margin: 3% auto;
+    display: flex;
+    position: relative; /* Make the container relatively positioned */
+  }
+
+  
+  @media only screen and (max-width: 350px) {
+    .icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #e5c6ae80;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 5px 1px #333333;
+      justify-content: center;
+    }
+    
+    .text {
+      font-size: 1rem;
+      font-family: "Assistant";
+      display: flex;
+      direction: rtl;
+      margin:auto;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .buttonWrap {
+      width: 270px;
+      height: 60px;
+      border-radius: 30px;
+      text-decoration: none;
+      color:black;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 0 4px 1px #333;;
+      background: linear-gradient(to left, #ece4dc, #e6dccf, #D6D1CB);
+      margin: 3% auto;
+      display: flex;
+      position: relative; /* Make the container relatively positioned */
+    }
+  
+  }
+  @media only screen and (min-width: 350px) and (max-width: 550px) {
+    .icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #e5c6ae80;
+      border-radius: 50%;
+      height: 65px;
+      width: 65px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 5px 1px #333333;
+      justify-content: center;
+    }
+    
+    .text {
+      font-size: 1.1rem;
+      font-family: "Assistant";
+      display: flex;
+      direction: rtl;
+      margin:auto;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .buttonWrap {
+      width: 330px;
+      height: 65px;
+      border-radius: 30px;
+      text-decoration: none;
+      color:black;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 0 4px 1px #333;;
+      background: linear-gradient(to left, #ece4dc, #e6dccf, #D6D1CB);
+      margin: 3% auto;
+      display: flex;
+      position: relative; /* Make the container relatively positioned */
+    }
+  
+  }
