@@ -7,6 +7,7 @@ import ByMe from "../components/ByMe/ByMe"
 
 import FirstScreenSocial from "./screens/FirstScreenSocial"
 import SecondScreenSocial from "./screens/SecondScreen"
+import NavBarNew from "../components/NewNav/NavBarNew"
 
 
 const SocialWrapper=()=>{
@@ -27,7 +28,7 @@ const SocialWrapper=()=>{
 
 return <>
 <div className={styles.background}>
-<NavBar/>
+<NavBarNew scrolled={scrolled}/>
 <FirstScreenSocial scrolled={scrolled}/>
 <SecondScreenSocial/>
 <ByMe/>

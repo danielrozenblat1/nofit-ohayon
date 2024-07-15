@@ -8,6 +8,8 @@ import Recomends from "../recommend/Recommends"
 import AllRecommends from "../recommend/AllRecommends"
 import Me from "../me/Me"
 import ByMe from "../ByMe/ByMe"
+import NavBarNew from "../NewNav/NavBarNew"
+import NewImagesGrid3 from "../../UGCpage/grid/NewImagesGrid3"
 
 const MainPageWrapper=()=>{
     const [scrolled, setScrolled] = useState(false);
@@ -26,11 +28,12 @@ const MainPageWrapper=()=>{
 
 return <>
 <div className={styles.background}>
- <NavBar />
+ <NavBarNew scrolled={scrolled}/>
 <FirstScreenHome scrolled={scrolled}/>
 <Recomends/>
 <SocialDesign/>
 <AllRecommends/>
+<NewImagesGrid3/>
 <Me/>
 <ByMe/>
 </div>

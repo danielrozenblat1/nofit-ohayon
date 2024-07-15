@@ -15,6 +15,18 @@
     color:#69443c;
     text-shadow:  2px 1px 4px #00000085;
 }
+.titleP{
+    font-size: 3.5rem;
+    font-family: "Assistant";
+    text-align: center;
+    margin:0 auto;
+    padding-top:10px;
+    direction: rtl;
+    width:90%;
+    padding-top:90px;
+    color:#69443c;
+    text-shadow:  2px 1px 4px #00000085;
+}
 .description{
     font-size:1.4rem;
     font-family: "AssistantR";
@@ -43,6 +55,16 @@
         text-align: center;
         margin:0 auto;
         padding-top:10px;
+        direction: rtl;
+        color:#69443c;
+        text-shadow:  2px 1px 4px #00000085;
+    }
+    .titleP{
+        font-size: 2.2rem;
+        font-family: "Assistant";
+        text-align: center;
+        margin:0 auto;
+        padding-top:90px;
         direction: rtl;
         color:#69443c;
         text-shadow:  2px 1px 4px #00000085;
@@ -80,6 +102,17 @@
         color:#69443c;
         text-shadow:  2px 1px 4px #00000085;
     }
+    .titleP{
+        font-size: 2.5rem;
+        font-family: "Assistant";
+        text-align: center;
+        margin:0 auto;
+    
+        direction: rtl;
+        color:#69443c;
+        text-shadow:  2px 1px 4px #00000085;
+        padding-top: 90px;
+    }
     .description{
         font-size:1.25rem;
         font-family: "AssistantR";
@@ -113,6 +146,17 @@
         color:#69443c;
         text-shadow:  2px 1px 4px #00000085;
     }
+    .titleP{
+        font-size: 2.8rem;
+        font-family: "Assistant";
+        text-align: center;
+        margin:0 auto;
+    
+        direction: rtl;
+        color:#69443c;
+        text-shadow:  2px 1px 4px #00000085;
+        padding-top: 90px;
+    }
     .description{
         font-size:1.25rem;
         font-family: "AssistantR";
@@ -142,6 +186,16 @@
         text-align: center;
         margin:0 auto;
         padding-top:10px;
+        direction: rtl;
+        color:#69443c;
+        text-shadow:  2px 1px 4px #00000085;
+    }
+    .titleP{
+        font-size: 3rem;
+        font-family: "Assistant";
+        text-align: center;
+        margin:0 auto;
+        padding-top:90px;
         direction: rtl;
         color:#69443c;
         text-shadow:  2px 1px 4px #00000085;
@@ -179,6 +233,16 @@
         color:#69443c;
         text-shadow:  2px 1px 4px #00000085;
     }
+    .titleP{
+        font-size:3rem;
+        font-family: "Assistant";
+        text-align: center;
+        margin:0 auto;
+        padding-top:90px;
+        direction: rtl;
+        color:#69443c;
+        text-shadow:  2px 1px 4px #00000085;
+    }
     .description{
         font-size:1.25rem;
         font-family: "AssistantR";
@@ -208,6 +272,16 @@
         text-align: center;
         margin:0 auto;
         padding-top:10px;
+        direction: rtl;
+        color:#69443c;
+        text-shadow:  2px 1px 4px #00000085;
+    }
+    .titleP{
+        font-size: 3.2rem;
+        font-family: "Assistant";
+        text-align: center;
+        margin:0 auto;
+        padding-top:90px;
         direction: rtl;
         color:#69443c;
         text-shadow:  2px 1px 4px #00000085;
@@ -244,6 +318,16 @@
         direction: rtl;
         color:#69443c;
         text-shadow:  2px 1px 4px #00000085;
+    }
+    .titleP{
+        font-size: 3.5rem;
+        font-family: "Assistant";
+        text-align: center;
+        margin:0 auto;
+        padding-top:90px;
+        direction: rtl;
+        color:#69443c;
+        text-shadow:  2px 1px 4px #00000085;  
     }
     .description{
         font-size:1.25rem;

@@ -7,6 +7,7 @@ import FirstScreenUGC from "./screens/FirstScreenUGC"
 
 import ByMe from "../components/ByMe/ByMe"
 import NewImagesGrid2 from "./grid/NewImagesGrid2"
+import NavBarNew from "../components/NewNav/NavBarNew"
 
 
 const UGCWrapper=()=>{
@@ -27,7 +28,7 @@ const UGCWrapper=()=>{
 
 return <>
 <div className={styles.background}>
-<NavBar/>
+<NavBarNew scrolled={scrolled}/>
 <FirstScreenUGC scrolled={scrolled}/>
 <NewImagesGrid2/>
 <ByMe/>

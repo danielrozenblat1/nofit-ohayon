@@ -1,13 +1,13 @@
 import styles from "./NewImageGrid.module.css"
 import CustomButton from "../../components/button/CustomButton"
-import grid1 from "../../videos/נופית מותגים 1.mp4"
-import grid2 from "../../videos/נופית מותגים 2.mp4"
+import grid1 from "../../videos/מותגים נופית 1.mp4"
+import grid2 from "../../videos/מותגים נופית 2.mp4"
 import grid3 from "../../videos/נופית מותגים 3.mp4"
-import grid4 from "../../videos/נופית מותגים 4.mp4"
-import grid5 from "../../videos/נופית מותגים 5.mp4"
-import grid6 from "../../videos/נופית מותגים 6.mp4"
-import grid7 from "../../videos/נופית מותגים 7.mp4"
-import grid8 from "../../videos/נופית מותגים 8.mp4"
+import grid4 from "../../videos/מותגים נופית 4.mp4"
+import grid5 from "../../videos/מותגים נופית 5.mp4"
+import grid6 from "../../videos/מותגים נופית 6.mp4"
+import grid7 from "../../videos/מותגים נופית 7.mp4"
+import grid8 from "../../videos/מותגים נופית 8.mp4"
 
 import { useEffect, useState } from "react"
 import ScrollReveal from "scrollreveal"
@@ -57,16 +57,16 @@ const [zoom,setZoom]=useState(false)
 <div className={styles.description}>גללו למטה והתרשמו</div>
     <div className={styles.container}>
     <div className={styles.row2}>
-    <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
+    <video className={styles.image3}  muted  controls alt="נופית UGC">
                     <source src={grid1} type="video/mp4" />
                 </video>
-                <video className={styles.image1}  muted playsInline controls alt="נופית UGC">
+                <video className={styles.image3}  muted  controls alt="נופית UGC">
                     <source src={grid2} type="video/mp4" />
                 </video>
-    <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
+    <video className={styles.image3}  muted  controls alt="נופית UGC">
                     <source src={grid3} type="video/mp4" />
                 </video>
-                <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
+                <video className={styles.image3}  muted  controls alt="נופית UGC">
                     <source src={grid4} type="video/mp4" />
                 </video>
           
@@ -75,16 +75,16 @@ const [zoom,setZoom]=useState(false)
     </div>
     <div className={styles.row2}>
     <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
+                    <source src={grid5} type="video/mp4" />
+                </video>
+                <video className={styles.image3}  muted  controls alt="נופית UGC">
                     <source src={grid6} type="video/mp4" />
                 </video>
-                <video className={styles.image1}  muted playsInline controls alt="נופית UGC">
+    <video className={styles.image3}  muted  controls alt="נופית UGC">
                     <source src={grid7} type="video/mp4" />
                 </video>
-    <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
+                <video className={styles.image3}  muted  controls alt="נופית UGC">
                     <source src={grid8} type="video/mp4" />
-                </video>
-                <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
-                    <source src={grid5} type="video/mp4" />
                 </video>
            
           

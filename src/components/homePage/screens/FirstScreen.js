@@ -11,7 +11,7 @@ const FirstScreenHome=(props)=>{
 
 return <>
 <div className={styles.background}>
-<h1 className={props.scrolled ?styles.nameP :styles.name}>נופית אוחיון</h1>
+<h1 className={props.scrolled? styles.nameP :styles.name}>Nofit Marketing</h1>
 <div className={styles.description}>צילום | ניהול סושיאל מדיה </div>
 <div className={styles.center}><img className={styles.image} src={nofit} alt="נופית אוחיון"/></div>
 <div className={styles.who}>הדרך שלך לפריצה ברשת מתחילה כאן!</div>

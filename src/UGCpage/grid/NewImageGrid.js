@@ -54,8 +54,8 @@ const [zoom,setZoom]=useState(false)
           });
     },[])
     return <>
-<div className={styles.title}>ויש גם צילומי סרטונים...</div>
-<div className={styles.description}>גללו למטה והתרשמו</div>
+<div className={styles.title}>היום בלי סרטוני רילס לעסק - אתה לא קיים!</div>
+<div className={styles.description}>גללו למטה והתרשמו ממקבץ סרטונים שצילמתי ללקוחות שלי</div>
     <div className={styles.container}>
     <div className={styles.row2}>
     <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
