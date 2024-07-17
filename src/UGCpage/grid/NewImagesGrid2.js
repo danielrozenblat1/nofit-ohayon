@@ -8,7 +8,10 @@ import grid5 from "../../videos/מותגים נופית 5.mp4"
 import grid6 from "../../videos/מותגים נופית 6.mp4"
 import grid7 from "../../videos/מותגים נופית 7.mp4"
 import grid8 from "../../videos/מותגים נופית 8.mp4"
-
+import grid9 from "../../videos/נופית UGC 11.mp4"
+import grid10 from "../../videos/נופית UGC 12.mp4"
+import grid11 from "../../videos/נופית מותגים 4.mp4"
+import grid12 from "../../videos/נופית UGC 5 (2).mp4"
 import { useEffect, useState } from "react"
 import ScrollReveal from "scrollreveal"
 
@@ -70,7 +73,12 @@ const [zoom,setZoom]=useState(false)
                     <source src={grid4} type="video/mp4" />
                 </video>
           
-        
+                <video className={styles.image3}  muted  controls alt="נופית UGC">
+                    <source src={grid10} type="video/mp4" />
+                </video>
+                <video className={styles.image3}  muted  controls alt="נופית UGC">
+                    <source src={grid12} type="video/mp4" />
+                </video>
    
     </div>
     <div className={styles.row2}>
@@ -87,8 +95,13 @@ const [zoom,setZoom]=useState(false)
                     <source src={grid8} type="video/mp4" />
                 </video>
            
+                <video className={styles.image3}  muted  controls alt="נופית UGC">
+                    <source src={grid9} type="video/mp4" />
+                </video>
           
-        
+                <video className={styles.image3}  muted  controls alt="נופית UGC">
+                    <source src={grid11} type="video/mp4" />
+                </video>
     </div>
     {/* <div className={styles.row}>
     <img className={styles.image3}  alt="נופית UGC"src={image6}/>

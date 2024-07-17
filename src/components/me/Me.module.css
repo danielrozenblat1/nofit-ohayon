@@ -36,7 +36,7 @@
         width:70%;
         display: flex;
         justify-content: center;
-        margin:2% auto;
+        margin:3% auto;
     }
     .image{
         width: 100%;
@@ -49,7 +49,7 @@
         font-size: 2.2rem;
         font-family: "Assistant";
         text-align: center;
-        margin:2% auto;
+        margin:3% auto;
         color:#69443c;
         text-shadow:  0 2px 4px rgba(0, 0, 0, 0.274);
         direction: rtl;
@@ -59,9 +59,9 @@
         font-family: "Assistant";
         width:95%;
         text-align: center;
-        margin:3% auto;
+        margin:4% auto;
         direction: rtl;
-    
+    line-height: 1.25;
         color:#482922;
     }
 

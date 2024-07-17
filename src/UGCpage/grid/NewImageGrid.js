@@ -4,12 +4,14 @@ import grid1 from "../../videos/נופית UGC 1.mp4"
 import grid2 from "../../videos/נופית UGC 2.mp4"
 import grid3 from "../../videos/נופית UGC 3.mp4"
 import grid4 from "../../videos/נופית UGC 4.mp4"
-import grid5 from "../../videos/נופית UGC 5.mp4"
+
 import grid6 from "../../videos/נופית UGC 6.mp4"
-import grid7 from "../../videos/נופית UGC 7.mp4"
+import grid7 from "../../videos/נופית לקוחה 14.mp4"
 import grid8 from "../../videos/נופית UGC 8.mp4"
 import grid9 from "../../videos/נופית UGC 9.mp4"
-import grid10 from "../../videos/נופית UGC 10.mp4"
+
+import grid11 from "../../videos/נופית לקוח 11.mp4"
+import grid12 from "../../videos/נופית לקוח 12.mp4"
 import { useEffect, useState } from "react"
 import ScrollReveal from "scrollreveal"
 
@@ -53,6 +55,8 @@ const [zoom,setZoom]=useState(false)
             scale: 1,
           });
     },[])
+
+    //  הסרטון השני בשורה בצד ימין במקום הסרטון של הדלי - להחליף בסרטון שהיא תשלח לי
     return <>
 <div className={styles.title}>היום בלי סרטוני רילס לעסק - אתה לא קיים!</div>
 <div className={styles.description}>גללו למטה והתרשמו ממקבץ סרטונים שצילמתי ללקוחות שלי</div>
@@ -70,11 +74,11 @@ const [zoom,setZoom]=useState(false)
                 <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
                     <source src={grid4} type="video/mp4" />
                 </video>
+       
                 <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
-                    <source src={grid5} type="video/mp4" />
+                    <source src={grid11} type="video/mp4" />
                 </video>
-        
-   
+
     </div>
     <div className={styles.row2}>
     <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
@@ -89,10 +93,11 @@ const [zoom,setZoom]=useState(false)
                 <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
                     <source src={grid9} type="video/mp4" />
                 </video>
+        
                 <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
-                    <source src={grid10} type="video/mp4" />
+                    <source src={grid12} type="video/mp4" />
                 </video>
-          
+
         
     </div>
     {/* <div className={styles.row}>
