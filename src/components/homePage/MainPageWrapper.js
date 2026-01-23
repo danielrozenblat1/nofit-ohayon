@@ -11,6 +11,7 @@ import ByMe from "../ByMe/ByMe"
 import NavBarNew from "../NewNav/NavBarNew"
 import NewImagesGrid3 from "../../UGCpage/grid/NewImagesGrid3"
 import PrivacyPolicy from "../privacy/Privacy"
+import Testimonials from "../recommend/Testimonials"
 
 const MainPageWrapper=()=>{
     const [scrolled, setScrolled] = useState(false);
@@ -33,7 +34,8 @@ return <>
 <FirstScreenHome scrolled={scrolled}/>
 <Recomends/>
 <SocialDesign/>
-<AllRecommends/>
+<Testimonials/>
+{/* <AllRecommends/> */}
 <NewImagesGrid3/>
 <Me/>
 <PrivacyPolicy

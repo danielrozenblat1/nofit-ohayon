@@ -1,0 +1,256 @@
+.title {
+  font-family: "OpenSans", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem auto 0rem;
+  background: linear-gradient(135deg, #000000, #1a1a1a, #333333, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 92%;
+  direction: rtl;
+  letter-spacing: -1px;
+  position: relative;
+  padding: 0 1rem;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+.shortsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px;
+  max-width: 720px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.shortItem {
+  width: 350px;
+  height: 622px; /* יחס 9:16 מדויק */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  background-color: #000;
+}
+
+.shortItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Thumbnail Styles */
+.thumbnail {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.thumbnail::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.thumbnail:hover::before {
+  opacity: 1;
+}
+
+.thumbnailImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail:hover .thumbnailImage {
+  transform: scale(1.05);
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.25),
+    0 0 0 0 rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  z-index: 2;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.playButton::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  animation: ripple 2s ease-out infinite;
+}
+
+.playButton::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 25px;
+  border-color: transparent transparent transparent #000;
+  margin-left: 5px;
+}
+
+.thumbnail:hover .playButton {
+  transform: translate(-50%, -50%) scale(1.15);
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 
+    0 8px 30px rgba(0, 0, 0, 0.35),
+    0 0 0 8px rgba(255, 255, 255, 0.2);
+  animation: none;
+}
+
+.thumbnail:hover .playButton::before {
+  animation: none;
+  opacity: 0;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* טאבלטים */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .shortsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 16px;
+  }
+  
+  .shortItem {
+    width: calc(50vw - 24px);
+    height: calc((50vw - 24px) * 1.777); /* יחס 9:16 */
+    min-width: 140px;
+    min-height: 249px;
+  }
+  
+  .playButton {
+    width: 65px;
+    height: 65px;
+  }
+  
+  .playButton::after {
+    border-width: 12px 0 12px 20px;
+    margin-left: 4px;
+  }
+}
+
+/* טלפונים */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+    margin: 0.5rem auto 0rem;
+    letter-spacing: -0.5px;
+  }
+  
+  .shortsContainer {
+    gap: 8px;
+    padding: 12px;
+  }
+  
+  .shortItem {
+    width: calc(50vw - 20px);
+    height: calc((50vw - 20px) * 1.777); /* יחס 9:16 */
+    min-width: 120px;
+    min-height: 213px;
+    border-radius: 8px;
+  }
+  
+  .iframe {
+    border-radius: 8px;
+  }
+  
+  .thumbnail {
+    border-radius: 8px;
+  }
+  
+  .playButton {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .playButton::after {
+    border-width: 10px 0 10px 17px;
+    margin-left: 3px;
+  }
+}
+
+/* טלפונים קטנים מאוד */
+@media (max-width: 360px) {
+  .title {
+    font-size: 1.4rem;
+    padding: 0 0.5rem;
+  }
+  
+  .playButton {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .playButton::after {
+    border-width: 9px 0 9px 15px;
+  }
+}

@@ -1,19 +1,9 @@
 import styles from "./NewImageGrid.module.css"
 import CustomButton from "../../components/button/CustomButton"
-import grid1 from "../../videos/נופית UGC 1.mp4"
-import grid2 from "../../videos/נופית UGC 2.mp4"
-import grid3 from "../../videos/נופית UGC 3.mp4"
-import grid4 from "../../videos/נופית UGC 4.mp4"
 
-import grid6 from "../../videos/נופית UGC 6.mp4"
-import grid7 from "../../videos/נופית לקוחה 14.mp4"
-import grid8 from "../../videos/נופית UGC 8.mp4"
-import grid9 from "../../videos/נופית UGC 9.mp4"
-
-import grid11 from "../../videos/נופית לקוח 11.mp4"
-import grid12 from "../../videos/נופית לקוח 12.mp4"
 import { useEffect, useState } from "react"
 import ScrollReveal from "scrollreveal"
+import Shorts from "../../photoGraphPage/shorts/Shorts"
 
 const NewImagesGrid=()=>{
 
@@ -60,7 +50,7 @@ const [zoom,setZoom]=useState(false)
     return <>
 <div className={styles.title}>היום בלי סרטוני רילס לעסק - אתה לא קיים!</div>
 <div className={styles.description}>גללו למטה והתרשמו ממקבץ סרטונים שצילמתי ללקוחות שלי</div>
-    <div className={styles.container}>
+    {/* <div className={styles.container}>
     <div className={styles.row2}>
     <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
                     <source src={grid1} type="video/mp4" />
@@ -96,20 +86,21 @@ const [zoom,setZoom]=useState(false)
         
                 <video className={styles.image3}  muted playsInline controls alt="נופית UGC">
                     <source src={grid12} type="video/mp4" />
-                </video>
+                       </div>
+                </video> */}
 
         
-    </div>
+ 
     {/* <div className={styles.row}>
     <img className={styles.image3}  alt="נופית UGC"src={image6}/>
     </div> */}
     {/* <div className={styles.row2}>
 
-
+    </div>
     </div> */}
   
 
-    </div>
+<Shorts/>
     <div className={styles.description}>וזו רק טעימה קטנה מתוך עשרות סרטונים..</div>
     <CustomButton text="לחץ כאן לעוד מידע" />
     </>

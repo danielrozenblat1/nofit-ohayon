@@ -14,6 +14,7 @@ import grid11 from "../../videos/קפה 1.mp4"
 import grid12 from "../../videos/נופית UGC 5 (2).mp4"
 import { useEffect, useState } from "react"
 import ScrollReveal from "scrollreveal"
+import Shorts from "../shorts/Shorts"
 
 const NewImagesGrid2=()=>{
 
@@ -58,7 +59,7 @@ const [zoom,setZoom]=useState(false)
     return <>
 <div className={styles.title}>קחו טעימה ממותגים שכבר עשו את הצעד</div>
 <div className={styles.description}>גללו למטה והתרשמו</div>
-    <div className={styles.container}>
+    {/* <div className={styles.container}>
     <div className={styles.row2}>
     <video className={styles.image3}  muted  controls alt="נופית UGC">
                     <source src={grid1} type="video/mp4" />
@@ -102,17 +103,17 @@ const [zoom,setZoom]=useState(false)
                 <video className={styles.image3}  muted  controls alt="נופית UGC">
                     <source src={grid11} type="video/mp4" />
                 </video>
-    </div>
+    </div> */}
     {/* <div className={styles.row}>
     <img className={styles.image3}  alt="נופית UGC"src={image6}/>
     </div> */}
     {/* <div className={styles.row2}>
 
-
+ </div>
     </div> */}
   
-
-    </div>
+<Shorts/>
+   
     <div className={styles.description}>וזו רק טעימה קטנה מתוך עשרות סרטונים..</div>
     <CustomButton text="לחץ כאן לעוד מידע בנושא UGC" />
     </>
