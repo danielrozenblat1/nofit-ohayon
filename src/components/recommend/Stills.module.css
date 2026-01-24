@@ -1,0 +1,154 @@
+/* Grid Container */
+.gridContainer {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.gridItem {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 100%;
+    padding-bottom: 100%; /* Creates a perfect square */
+}
+
+.gridImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gridImage:hover {
+    transform: scale(1.05);
+}
+
+.title {
+    font-size: 2.5rem;
+    direction: rtl;
+    width: 65%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #69443c;
+    justify-content: center;
+    text-align: center;
+    margin: 2% auto;
+    font-family: "Assistant";
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.5rem;
+    direction: rtl;
+    width: 65%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #2a1a16;
+    justify-content: center;
+    text-align: center;
+    margin: 2% auto;
+    font-family: "AssistantR";
+}
+
+.explain {
+    font-size: 25px;
+    direction: rtl;
+    width: 65%;
+    color: #2a1a16;
+    justify-content: center;
+    text-align: center;
+    margin: 2% auto;
+    font-family: "AssistantR";
+}
+
+/* Mobile - up to 450px: 2 columns */
+@media only screen and (max-width: 450px) {
+    .gridContainer {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        width: 90%;
+        margin: 3% auto;
+    }
+
+    .explain {
+        font-size: 1.1rem;
+        width: 90%;
+        margin: 3% auto;
+    }
+}
+
+/* Small tablets - 450px to 650px: 2 columns */
+@media only screen and (min-width: 450px) and (max-width: 650px) {
+    .gridContainer {
+        width: 85%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        width: 85%;
+    }
+
+    .explain {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+}
+
+/* Medium tablets - 650px to 900px: 3 columns */
+@media only screen and (min-width: 650px) and (max-width: 900px) {
+    .gridContainer {
+        width: 85%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+    .title {
+        font-size: 2.2rem;
+        width: 80%;
+    }
+
+    .explain {
+        font-size: 1.3rem;
+        width: 80%;
+    }
+}
+
+/* Small desktop - 900px to 1100px: 3 columns */
+@media only screen and (min-width: 900px) and (max-width: 1100px) {
+    .gridContainer {
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .title {
+        font-size: 2.4rem;
+        width: 75%;
+    }
+
+    .explain {
+        font-size: 22px;
+        width: 75%;
+    }
+}
+
+/* Desktop - 1100px and up: 4 columns (default styles apply) */
+@media only screen and (min-width: 1100px) {
+    .gridContainer {
+        width: 80%;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+}

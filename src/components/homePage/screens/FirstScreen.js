@@ -76,7 +76,7 @@ const FirstScreenHome = (props) => {
 
         <div className={styles.who}>הדרך שלך לפריצה ברשת מתחילה כאן!</div>
         <div className={styles.column}>
-          <Button icon={CameraIcon} text="צילום" />
+          <Button icon={CameraIcon} text="צילומי סושיאל" />
           <Button icon={socialIcon} text="ניהול סושיאל מדיה" />
           <Button icon={ugcIcon} text="UGC" />
         </div>

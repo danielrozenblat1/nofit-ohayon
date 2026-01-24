@@ -1,5 +1,5 @@
 import styles from "./FirstScreenPhoto.module.css"
-import nofit from "../../images/נופית תדמית צילום.png"
+import nofit from "../../images/נופית תדמית.png"
 import StilsImages from "../../components/recommend/StilsImages"
 import ForthScreenPhoto from "./ForthScreenPhoto"
 

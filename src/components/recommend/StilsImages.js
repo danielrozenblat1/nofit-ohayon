@@ -1,4 +1,4 @@
-import styles from "./Carousels.module.css"
+import styles from "./Stills.module.css"
 import result1 from "../../images/נופית סטילס 1.png"
 import result2 from "../../images/נופית סטילס 2.png"
 import result3 from "../../images/נופית סטילס 3.png"
@@ -30,207 +30,40 @@ import result28 from "../../images/נופית סטילס 28.png"
 import result29 from "../../images/נופית סטילס 29.png"
 import result30 from "../../images/נופית סטילס 30.png"
 import result31 from "../../images/נופית סטילס 31.png"
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
-import Slider from "react-slick"
 import CustomButton from "../button/CustomButton"
 
-const StilsImages=(props)=>{
-
-    const sliderSettings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        autoplay: true, // Enable autoplay
-        autoplaySpeed: 2500,
-        slidesToShow: window.innerWidth < 450 ? 1 : window.innerWidth < 650 ? 2 : window.innerWidth < 1100 ? 3 :4,
-        slidesToScroll:1,
-  
-      };
+const StilsImages = (props) => {
    
-    const content = [
-
-      {
-        type: 'image',
-        src: result1,
-      },
-
-
-      {
-        type: 'image',
-        src: result2,
-      },
-        
-      
-   
-      {
-        type: 'image',
-        src: result3,
-      },
- 
-
-      {
-        type: 'image',
-        src: result4,
-      }, 
-              {
-                type: 'image',
-                src: result5,
-              },
-              {
-                type: 'image',
-                src: result6,
-              }, 
-               {
-                  type: 'image',
-                  src: result7,
-                },
-             
-        {
-            type: 'image',
-            src: result8,
-          },
-     
-          {
-            type: 'image',
-            src: result9,
-          },
-          {
-            type: 'image',
-            src: result10,
-          },
-            {
-              type: 'image',
-              src: result11,
-            },
-        {
-          type: 'image',
-          src: result12,
-        },
-        {
-          type: 'image',
-          src: result13,
-        },
-  
-   
-        {
-          type: 'image',
-          src: result14,
-        },
-     
-        {
-            type: 'image',
-            src: result15,
-          },
-      {
-        type: 'image',
-        src: result16,
-      },
-      {
-        type: 'image',
-        src: result17,
-      },
-
- 
-      {
-        type: 'image',
-        src: result18,
-      },
-
-         
-      {
-        type: 'image',
-        src: result19,
-      },
-   
-      {
-          type: 'image',
-          src: result20,
-        },
-    {
-      type: 'image',
-      src: result21,
-    },
-    {
-      type: 'image',
-      src: result22,
-    },
-
-
-    {
-      type: 'image',
-      src: result23,
-    },
-    {
-        type: 'image',
-        src: result24,
-      },
-      {
-        type: 'image',
-        src: result25,
-      },
-  
-  
-      {
-        type: 'image',
-        src: result26,
-      },
-      {
-        type: 'image',
-        src: result27,
-      },
-      {
-        type: 'image',
-        src: result28,
-      },
-  
-  
-      {
-        type: 'image',
-        src: result29,
-      },
-      {
-        type: 'image',
-        src: result30,
-      },{
-        type: 'image',
-        src: result31,
-      },
+    const images = [
+        result1, result2, result3, result4, result5, result6, result7, result8,
+        result9, result10, result11, result12, result13, result14, result15, result16,
+        result17, result18, result19, result20, result21, result22, result23, result24,
+        result25, result26, result27, result28, result29, result30, result31
     ];
     
-   
-    return <>
-    <div className={styles.background} id="לקוחות ממליצות">
-<div className={styles.title}>{props.title}</div>
-<div className={styles.explain}>כל עסק, מותג ואדם שמייצג את עצמו יודע שללא תדמית מקצועית, הרבה יותר קשה למכור.. ,החליקו והתרשמו</div>
-<div className={styles.sliderContainer}>
-        <Slider {...sliderSettings}>
-          {content.map((item, index) => (
-            <div key={index}>
-              {item.type === 'image' && (
-                <img src={item.src} className={styles.image1} alt={`נופית סטילס מספר ${index + 1}`} />
-              )}
-              {item.type === 'video' && (
-                <video
-                  style={{ width: "100%",display:"flex",objectFit:"cover", margin: "auto", height: "100%" }}
-                  muted
-                  controls
-                
-                  itemprop="image"
-                >
-                  <source src={item.src} type="video/mp4" />
-             
-                </video>
-         
-              )}
+    return (
+        <>
+            <div className={styles.background} id="לקוחות ממליצות">
+                <div className={styles.title}>{props.title}</div>
+                <div className={styles.explain}>
+                    כל עסק, מותג ואדם שמייצג את עצמו יודע שללא תדמית מקצועית, הרבה יותר קשה למכור.. ,החליקו והתרשמו
+                </div>
+                <div className={styles.gridContainer}>
+                    {images.map((src, index) => (
+                        <div key={index} className={styles.gridItem}>
+                            <img 
+                                src={src} 
+                                className={styles.gridImage} 
+                                alt={`נופית סטילס מספר ${index + 1}`} 
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
-          ))}
-        </Slider>
-      </div>
-
-  </div>
-  <CustomButton text="נופית, בואי נדבר"/>
-    </>
+            <CustomButton text="נופית, בואי נדבר"/>
+        </>
+    );
 }
+
 export default StilsImages
