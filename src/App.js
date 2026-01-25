@@ -13,7 +13,7 @@ function App() {
     <Routes>
    
     <Route path="/" index element={<MainPageWrapper/>}/>
-    <Route path="/צילום" index element={<PhotoGraphWrapper/>}/>
+    <Route path="/צילומי סושיאל" index element={<PhotoGraphWrapper/>}/>
     <Route path="/ניהול סושיאל מדיה" index element={<SocialWrapper/>}/>
     <Route path="/UGC" index element={<UGCWrapper/>}/>
  </Routes>

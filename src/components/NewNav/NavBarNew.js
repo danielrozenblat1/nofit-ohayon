@@ -54,7 +54,7 @@ const NavBarNew = () => {
     { name: 'ראשי', route: '/' },
     { name: 'UGC', route: '/UGC' },
     { name: 'ניהול סושיאל', route: '/ניהול סושיאל מדיה' },
-    { name: 'צילום', route: '/צילום' }
+    { name: 'צילומי סושיאל', route: '/צילומי סושיאל' }
   ];
 
   return (
@@ -82,7 +82,7 @@ const NavBarNew = () => {
             </NavLink>
           ))}
           <div className={styles.center}>
-            <img className={styles.image} src={logo} alt="גל יאקובצאק לוגו" />
+            <img className={styles.image} src={logo} alt="נופית אוחיון לוגו" />
           </div>
         </div>
       )}
