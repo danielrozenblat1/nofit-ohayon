@@ -83,6 +83,18 @@ const Shorts = () => {
     'VSQDR9_bzw0',  // UGC - smarTrike
     'S9y8w9jtZqI',  // UGC - גלידה גולדה
     'dpkFIpxAMMw',  // UGC - טבעול
+    // הסרטונים הקודמים
+    'DWXnVJ4XsAw',  // אופטיקל סנטר
+    'NWKc6Me9fBY',  // אופטיקל סנטר
+    'j-32DKMrJhg',  // פסטריה
+    'vwUaP7hKo-k',  // יקב נווה ירק
+    'VSWA49Hvuzs',  // TOGO
+    '8-ZzyamO28o',  // מסעדת קלאסיק
+    '6p5NFpFOe0w',  // בקבוקים
+    '1C1fWGz4zBM',  // קיקו מילאנו
+    '-v735WdWCBc',  // BOTANY
+    'W2-JMxDracU',  // BOTANY
+    'LXtBJKwKHBs',  // TOGO
   ];
 
   useEffect(() => {
