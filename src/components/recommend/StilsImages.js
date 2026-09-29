@@ -39,7 +39,7 @@ const StilsImages = (props) => {
 
     return (
         <>
-            <div className={styles.background} id="לקוחות ממליצות">
+            <div className={styles.background} id="stills">
                 <div className={styles.title}>{props.title}</div>
                 <div className={styles.explain}>
                     כל עסק, מותג ואדם שמייצג את עצמו יודע שללא תדמית מקצועית, הרבה יותר קשה למכור.. ,החליקו והתרשמו
