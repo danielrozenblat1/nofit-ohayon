@@ -78,7 +78,7 @@ const Shorts = () => {
   const shortsData = [
     '0IP6rNvQh9g',  // UGC - ספא ראש
     'Xse_sZSVTdM',  // UGC - ספא ראש
-    '7DuJf_saETI',  // UGC - LEAVES
+    'oo015dGgyZI',  // UGC - LEAVES
     '8-etCLEa91U',  // UGC - NOIZZ
     'VSQDR9_bzw0',  // UGC - smarTrike
     'S9y8w9jtZqI',  // UGC - גלידה גולדה
