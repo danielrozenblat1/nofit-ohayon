@@ -1,5 +1,5 @@
 import styles from "./Me.module.css"
-import nofit from "../../images/נופית אוחיון תדמית 2.png"
+import nofit from "../../images/נופית אוחיון תדמית 2.webp"
 
 import CustomButton from "../button/CustomButton"
 const Me=()=>{
@@ -7,7 +7,7 @@ const Me=()=>{
  return <>
    <div className={styles.description}>מי אני שאוביל אותך לפריצה ברשתות החברתיות?</div>
     <h1 className={styles.title}>נופית אוחיון</h1>
-    <div className={styles.center}><img className={styles.image} src={nofit} alt="נופית אוחיון"/></div>
+    <div className={styles.center}><img loading="lazy" decoding="async" className={styles.image} src={nofit} alt="נופית אוחיון"/></div>
     <div className={styles.description}>איזה כיף שהגעת עד לכאן!
 
 אני נופית אוחיון, יוצרת תוכן UGC, צלמת ומתמחה בניהול סושיאל לעסקים ברשתות החברתיות. למדתי שיווק ברשתות החברתיות וכבר למעלה משלוש שנים שאני עוסקת בתחום, עוזרת לבעלי עסקים ליצור נוכחות דיגיטלית

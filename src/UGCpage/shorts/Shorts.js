@@ -58,6 +58,13 @@ const LazyYoutubeEmbed = ({ videoId, index }) => {
           alt={`YouTube Short ${index + 1}`}
           loading="lazy"
           className={styles.thumbnailImage}
+          onError={(e) => {
+            // לא לכל שורט יש maxres - נופלים לגיבוי
+            if (!e.currentTarget.dataset.fallback) {
+              e.currentTarget.dataset.fallback = '1';
+              e.currentTarget.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+            }
+          }}
         />
         <div className={styles.playButton}></div>
       </div>
@@ -69,17 +76,13 @@ const Shorts = () => {
   const titleRef = useRef(null);
   
   const shortsData = [
-    'DWXnVJ4XsAw',  // אופטיקל סנטר UGC
-    'NWKc6Me9fBY',  // עוד ריל של אופטיקל סנטר
-    'j-32DKMrJhg',  // פסטריה
-    'vwUaP7hKo-k',  // יקב נווה ירק
-    'VSWA49Hvuzs',  // TOGO
-    '8-ZzyamO28o',  // מסעדת קלאסיק
-    '6p5NFpFOe0w',  // בקבוקים
-    '1C1fWGz4zBM',  // קיקו מילאנו
-    '-v735WdWCBc',  // BOTANY
-    'W2-JMxDracU',  // עוד BOTANY
-    'LXtBJKwKHBs',  // עוד TOGO
+    '0IP6rNvQh9g',  // UGC - ספא ראש
+    'Xse_sZSVTdM',  // UGC - ספא ראש
+    '7DuJf_saETI',  // UGC - LEAVES
+    '8-etCLEa91U',  // UGC - NOIZZ
+    'VSQDR9_bzw0',  // UGC - smarTrike
+    'S9y8w9jtZqI',  // UGC - גלידה גולדה
+    'dpkFIpxAMMw',  // UGC - טבעול
   ];
 
   useEffect(() => {

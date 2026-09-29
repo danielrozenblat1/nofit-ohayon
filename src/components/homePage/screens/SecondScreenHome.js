@@ -1,6 +1,6 @@
 import styles from "./FirstScreen.module.css"
 import {useEffect,useRef} from "react"
-import nofit from "../../../images/נופית תדמית.png"
+import nofit from "../../../images/נופית תדמית.webp"
 import socialIcon from "../../../Icons/wired-gradient-962-social-media-marketing.json"
 import CameraIcon from "../../../Icons/wired-gradient-1035-polaroid-camera.json"
 import Button from "../../button/Button"

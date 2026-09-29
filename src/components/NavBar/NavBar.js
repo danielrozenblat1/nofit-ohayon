@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './NavBar.module.css';
-import logo from "../../images/נופית לוגו.png"
+import logo from "../../images/נופית לוגו.webp"
 import {NavLink} from "react-router-dom"
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +50,7 @@ const NavBar = () => {
       <nav className={scrolled ? styles.floatingNav :styles.navbar}>
         <div className={styles.logoContainer}>
           <div className={styles.logo}>
-            <img className={styles.image} src={logo} alt="נופית לוגו"/>
+            <img loading="eager" decoding="async" fetchpriority="high" className={styles.image} src={logo} alt="נופית לוגו"/>
           </div>
         </div>
        {width<850 && <div className={styles.hamburger} onClick={toggleMenu}>
@@ -78,7 +78,7 @@ const NavBar = () => {
             <li><NavLink className={styles.navLink} onClick={closeMenu} to="/UGC"><div >מותגים - UGC</div></NavLink></li>
             <li><NavLink className={styles.navLink} onClick={closeMenu} to="/ניהול סושיאל מדיה"><div >ניהול סושיאל</div></NavLink></li>
             <div className={styles.logo}>
-            <img className={styles.navImage} src={logo} alt="נופית לוגו"/>
+            <img loading="eager" decoding="async" fetchpriority="high" className={styles.navImage} src={logo} alt="נופית לוגו"/>
           </div>
           </ul>
         </div>

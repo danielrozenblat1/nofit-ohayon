@@ -1,7 +1,7 @@
 import styles from "./ThirdScreen.module.css"
 import { useEffect, useRef } from "react"
 import ScrollReveal from "scrollreveal"
-import { Player } from "@lordicon/react"
+import LazyIcon from "../../components/lazyIcon/LazyIcon"
 
 
 const ThirdScreenPhoto=()=>{
@@ -81,8 +81,7 @@ return <>
 
 <div className={styles.step}>
 <div className={styles.icons}>
-<Player ref={playerRef1} size="100%" onComplete={handleComplete1}
-icon={polaroid}/>
+<LazyIcon icon={polaroid} size="100%" />
 </div>
 <div className={styles.text}>
 
@@ -102,8 +101,7 @@ icon={polaroid}/>
     <div className={styles.section}>תמונות מקצועיות יכולות לסייע ביצירת זהות מיתוגית אחידה ומקצועית, שמשדרת את הערכים והמסרים שהעסק רוצה להעביר.</div>
 </div>
 <div className={styles.icons}>
-<Player ref={playerRef2} delay={500} size="100%" onComplete={handleComplete2}
-icon={suit}/>
+<LazyIcon icon={suit} size="100%" delay={500} />
 </div>
 </div>
 
@@ -111,8 +109,7 @@ icon={suit}/>
 
 <div className={styles.step}>
 <div className={styles.icons}>
-<Player ref={playerRef3} size="100%" onComplete={handleComplete3}
-icon={camera}/>
+<LazyIcon icon={camera} size="100%" />
 </div>
 <div className={styles.text}>
 

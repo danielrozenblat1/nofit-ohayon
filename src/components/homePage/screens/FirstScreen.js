@@ -1,6 +1,6 @@
 import styles from "./FirstScreen.module.css"
 import {useEffect, useRef, useState} from "react"
-import nofit from "../../../images/נופית תדמית.png"
+import nofit from "../../../images/נופית תדמית.webp"
 import socialIcon from "../../../Icons/wired-gradient-962-social-media-marketing.json"
 import CameraIcon from "../../../Icons/wired-gradient-1035-polaroid-camera.json"
 import ugcIcon from "../../../Icons/wired-gradient-960-feedback.json"
@@ -53,7 +53,7 @@ const FirstScreenHome = (props) => {
         <h1 className={props.scrolled ? styles.nameP : styles.name}>Nofit Marketing</h1>
         <div className={styles.description}>צילום | ניהול סושיאל מדיה</div>
         <div className={styles.center}>
-          <img className={styles.image} src={nofit} alt="נופית אוחיון" />
+          <img loading="eager" decoding="async" fetchpriority="high" className={styles.image} src={nofit} alt="נופית אוחיון" />
         </div>
         
         {/* Statistics Section */}

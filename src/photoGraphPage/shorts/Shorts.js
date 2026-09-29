@@ -57,7 +57,15 @@ const LazyYoutubeEmbed = ({ videoId, index }) => {
           src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
           alt={`YouTube Short ${index + 1}`}
           loading="lazy"
+          decoding="async"
           className={styles.thumbnailImage}
+          onError={(e) => {
+            // לא לכל שורט יש maxres - נופלים לגיבוי
+            if (!e.currentTarget.dataset.fallback) {
+              e.currentTarget.dataset.fallback = '1';
+              e.currentTarget.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+            }
+          }}
         />
         <div className={styles.playButton}></div>
       </div>
@@ -69,22 +77,14 @@ const Shorts = () => {
   const titleRef = useRef(null);
   
   const shortsData = [
-    'b2bPF7ULU0E',
-    'T1oPsRhDks8',
-    'GprVNRxAjF4',
-    'b0l-jM9PDmY',
-    'f_atY5SdthM',
-    'eBvIJ_yHY9U',
-    '0uedj5glImI',
-    'JzLj9fJ2OsI',
-    'GXreUbtf3ec',
-    'EW9gh65YjeU',
-    '1dY5tG9ZAsQ',
-    'YMmgl_Y2PbA',
-    'hA5EBhOIuMk',
-    'tJo-lXpcp5g',
-    'T4tk1aEzEYM',
-    'HsmaeKXgOuk',
+    'QSMna7cZKhc',
+    'LcRXlYJnT68',
+    '7DuJf_saETI',
+    'EAJH9Zp-F3Q',
+    '7VUMKq6qHTg',
+    '5h4mhUwKzDY',
+    'AkbmEYGrQv0',
+    'IgHqG9xP7iU',
   ];
 
   useEffect(() => {

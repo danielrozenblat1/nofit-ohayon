@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './NavBarNew.module.css';
-import logo from '../../images/נופית לוגו.png';
+import logo from '../../images/נופית לוגו.webp';
 import { FaInstagram, FaFacebook, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa';
 
 const NavBarNew = () => {
@@ -66,7 +66,7 @@ const NavBarNew = () => {
       )}
       {windowWidth <= 850 && (
         <div className={styles.logo}>
-          <img src={logo} alt="Logo" />
+          <img loading="eager" decoding="async" fetchpriority="high" src={logo} alt="Logo" />
         </div>
       )}
       {isMenuOpen && windowWidth <= 850 && (
@@ -82,7 +82,7 @@ const NavBarNew = () => {
             </NavLink>
           ))}
           <div className={styles.center}>
-            <img className={styles.image} src={logo} alt="נופית אוחיון לוגו" />
+            <img loading="eager" decoding="async" fetchpriority="high" className={styles.image} src={logo} alt="נופית אוחיון לוגו" />
           </div>
         </div>
       )}
@@ -101,7 +101,7 @@ const NavBarNew = () => {
       )}
       {window.innerWidth > 1050 && (
         <div className={styles.logo}>
-          <img src={logo} alt="Logo" />
+          <img loading="eager" decoding="async" fetchpriority="high" src={logo} alt="Logo" />
         </div>
       )}
       <div className={styles.socialIcons}>

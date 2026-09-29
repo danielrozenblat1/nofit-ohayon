@@ -1,12 +1,18 @@
+/* גופן וריאבילי אחד משרת את שני המשקלים - הורדה אחת בלבד */
 @font-face {
-    font-family: 'Assistant';
-    src: url('./Assistant-VariableFont_wght.ttf') format('truetype');
-    font-weight:800;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'AssistantR';
-    src: url('./Assistant-VariableFont_wght.ttf') format('truetype');
-    font-weight:light;
-    font-style: normal;
-  }
+  font-family: 'Assistant';
+  src: url('./Assistant-VariableFont_wght.woff2') format('woff2'),
+       url('./Assistant-VariableFont_wght.ttf') format('truetype');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AssistantR';
+  src: url('./Assistant-VariableFont_wght.woff2') format('woff2'),
+       url('./Assistant-VariableFont_wght.ttf') format('truetype');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}

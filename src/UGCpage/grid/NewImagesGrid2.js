@@ -1,17 +1,5 @@
 import styles from "./NewImageGrid.module.css"
 import CustomButton from "../../components/button/CustomButton"
-import grid1 from "../../videos/מותגים נופית 1.mp4"
-import grid2 from "../../videos/מותגים נופית 2.mp4"
-import grid3 from "../../videos/נופית מותגים 3.mp4"
-import grid4 from "../../videos/מותגים נופית 4.mp4"
-import grid5 from "../../videos/מותגים נופית 5.mp4"
-import grid6 from "../../videos/מותגים נופית 6.mp4"
-import grid7 from "../../videos/מותגים נופית 7.mp4"
-import grid8 from "../../videos/מותגים נופית 8.mp4"
-import grid9 from "../../videos/נופית UGC 11.mp4"
-import grid10 from "../../videos/נופית UGC 12.mp4"
-import grid11 from "../../videos/קפה 1.mp4"
-import grid12 from "../../videos/נופית UGC 5 (2).mp4"
 import { useEffect, useState } from "react"
 import ScrollReveal from "scrollreveal"
 import Shorts from "../shorts/Shorts"
@@ -105,7 +93,7 @@ const [zoom,setZoom]=useState(false)
                 </video>
     </div> */}
     {/* <div className={styles.row}>
-    <img className={styles.image3}  alt="נופית UGC"src={image6}/>
+    <img loading="lazy" decoding="async" className={styles.image3}  alt="נופית UGC"src={image6}/>
     </div> */}
     {/* <div className={styles.row2}>
 

@@ -1,0 +1,100 @@
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 2% auto 3%;
+    padding: 1.6rem 0;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 9%, #000 91%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 9%, #000 91%, transparent);
+}
+
+.track {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    animation: slide 42s linear infinite;
+}
+
+.wrapper:hover .track {
+    animation-play-state: paused;
+}
+
+.logo {
+    height: 78px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    margin: 0 3.2rem;
+    flex-shrink: 0;
+    opacity: 0.88;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.logo:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+@keyframes slide {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .track {
+        animation: none;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .logo {
+        height: 64px;
+        max-width: 160px;
+        margin: 0 2.4rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .wrapper {
+        padding: 1.1rem 0;
+    }
+    .logo {
+        height: 48px;
+        max-width: 125px;
+        margin: 0 1.7rem;
+    }
+    .track {
+        animation-duration: 30s;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .logo {
+        height: 40px;
+        max-width: 105px;
+        margin: 0 1.3rem;
+    }
+}
+
+/* איזון אופטי - לוגו מרובע/עגול תופס יותר נפח ויזואלי מלוגו רחב באותו גובה */
+.wordmark { height: 88px; }
+.block    { height: 74px; }
+
+@media only screen and (max-width: 1050px) {
+    .wordmark { height: 72px; }
+    .block    { height: 61px; }
+}
+
+@media only screen and (max-width: 650px) {
+    .wordmark { height: 54px; }
+    .block    { height: 48px; }
+}
+
+@media only screen and (max-width: 380px) {
+    .wordmark { height: 45px; }
+    .block    { height: 40px; }
+}

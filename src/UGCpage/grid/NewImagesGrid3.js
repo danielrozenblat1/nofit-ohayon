@@ -7,6 +7,9 @@ import grid3 from  "../../videos/נופית סרטון המלצה 3.mp4"
 
 import { useEffect, useState } from "react"
 import ScrollReveal from "scrollreveal"
+import poster1 from "../../images/posters/rec1.webp"
+import poster2 from "../../images/posters/rec2.webp"
+import poster3 from "../../images/posters/rec3.webp"
 
 const NewImagesGrid3=()=>{
 
@@ -53,13 +56,13 @@ const [zoom,setZoom]=useState(false)
 
     <div className={styles.container}>
     <div className={styles.row1}>
-    <video className={styles.image2}  muted  controls alt="נופית המלצות">
+    <video poster={poster1} className={styles.image2} muted playsInline controls preload="none" alt="נופית המלצות">
                     <source src={grid1} type="video/mp4" />
                 </video>
-                <video className={styles.image2}  muted  controls alt="נופית המלצות">
+                <video poster={poster2} className={styles.image2} muted playsInline controls preload="none" alt="נופית המלצות">
                     <source src={grid2} type="video/mp4" />
                 </video>
-                <video className={styles.image2}  muted playsInline controls alt="נופית המלצות">
+                <video poster={poster3} className={styles.image2} muted playsInline controls preload="none" alt="נופית המלצות">
                     <source src={grid3} type="video/mp4" />
                 </video>
           
@@ -68,7 +71,7 @@ const [zoom,setZoom]=useState(false)
     </div>
    
     {/* <div className={styles.row}>
-    <img className={styles.image3}  alt="נופית המלצות"src={image6}/>
+    <img loading="lazy" decoding="async" className={styles.image3}  alt="נופית המלצות"src={image6}/>
     </div> */}
     {/* <div className={styles.row2}>
 

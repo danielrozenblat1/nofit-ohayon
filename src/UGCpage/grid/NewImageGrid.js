@@ -92,7 +92,7 @@ const [zoom,setZoom]=useState(false)
         
  
     {/* <div className={styles.row}>
-    <img className={styles.image3}  alt="נופית UGC"src={image6}/>
+    <img loading="lazy" decoding="async" className={styles.image3}  alt="נופית UGC"src={image6}/>
     </div> */}
     {/* <div className={styles.row2}>
 

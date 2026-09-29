@@ -15,7 +15,7 @@ return <>
 <What title="הכל כלול" description="בלחיצה על הכפתור תוכל לברר על חבילת הסרטונים המכילה ניהול סושיאל, צילומי תדמית , צילום סרטונים ועריכה שלהם"/>
 </div> */}
 <div className={styles.description}>אני מאמינה שלכל לקוח יש את הצרכים שמתאימים בדיוק אליו ולכן..</div>
-<div className={styles.center}><img className={styles.image} src={valeria}/></div>
+<div className={styles.center}><img loading="lazy" decoding="async" className={styles.image} src={valeria}/></div>
 <CustomButton text="תלחץ כאן ונדבר" message="היי ולריה, אשמח לשמוע מה שיש לך להציע בנושא הסושיאל"/>
 </>
 

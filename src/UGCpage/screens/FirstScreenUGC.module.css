@@ -1,3 +1,11 @@
+.subDescription{
+    font-size: 1.5rem;
+    font-family: "Assistant";
+    text-align: center;
+    margin: 0.5% auto 1.5%;
+    direction: rtl;
+    opacity: 0.72;
+}
 .center{
     width:50%;
     display: flex;
@@ -145,4 +153,10 @@
         color:rgb(10, 145, 190)
     }
     
+}
+@media only screen and (max-width: 650px) {
+    .subDescription{
+        font-size: 1.15rem;
+        margin: 1.5% auto 3%;
+    }
 }
